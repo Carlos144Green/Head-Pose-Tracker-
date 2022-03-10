@@ -6,7 +6,6 @@ This is a head Pose Tracker. It takes an image, finds all faces, assigns points 
 where the user is facing. If there are multiple faces it will assign a red box to all faces except the most central one.
 
 REPORT
-
 I used openCV, mediapipe, and NumPy for my imports in order to detect faces, apply mesh points, and do calculations. The
 order I solved the problems was 5,3,1,2,4. I tested only using a web camera with no stand-alone videos(5). I then applied
 the face mesh which automatically detects the location of the face(3). I then found the left uppermost and the right lowermost corner of the face in order to bound the face(1). I then calculated the distance from the center of the video feed and
@@ -16,6 +15,7 @@ the nose, and the chin. This is because I found a 3D face template with those de
 depths helps with the stability of the output. With the points, depths, and a few other camera settings a proper head position
 vector is calculated and displayed.
 
-GIT
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60107217/157765900-b004541a-abdf-4ed5-a304-fddc66c6e609.gif" />
+</p>
 
-https://github.com/Carlos144Green/Head-Pose-Tracker-
